@@ -1,0 +1,331 @@
+/* ================= RESET & GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #020617;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* ================= AUTH PAGES (LOGIN / SIGNUP) ================= */
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-box {
+    background: url("program-muscle.jpg") center/cover no-repeat;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-box p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ================= DASHBOARD ================= */
+.dash-header {
+    background: #020617;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0f172a;
+}
+
+.dash-header button {
+    padding: 6px 14px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tracker {
+    padding: 20px;
+}
+
+.tracker input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+.tracker button {
+    padding: 10px 15px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.tracker ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+/* ================= HEADER & NAVBAR ================= */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(2, 6, 23, 0.95);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 30px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Navbar buttons */
+.btn-small {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #38bdf8;
+    color: #020617 !important;
+    font-weight: bold;
+}
+
+.btn-small.outline {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8 !important;
+}
+
+/* Mobile menu icon */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    min-height: 100vh;
+    padding: 120px 10% 60px;
+    background: url("background.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 16px;
+    animation: fadeUp 1s ease;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 28px;
+    color: #cbd5f5;
+    animation: fadeUp 1.3s ease;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    animation: fadeUp 1.6s ease;
+}
+
+/* Main buttons */
+.btn {
+    background: #38bdf8;
+    color: #020617;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5f5;
+}
+
+/* ================= PROGRAM CARDS ================= */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #030613;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #20232c;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.25);
+}
+
+/* ================= CTA ================= */
+.cta {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+    padding: 70px 10%;
+    text-align: center;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #04050c;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 64px;
+        right: 0;
+        width: 100%;
+        background: #020617;
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .auth-box {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}

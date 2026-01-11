@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | MrKalkiFit</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="dash-header">
+  <h2>MrKalkiFit Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<section class="tracker">
+  <h3>Workout Tracker</h3>
+  <input type="text" id="workout" placeholder="Workout Done Today">
+  <button onclick="saveWorkout()">Save</button>
+  <ul id="workoutList"></ul>
+</section>
+
+<section class="tracker">
+  <h3>Diet Tracker</h3>
+  <input type="text" id="diet" placeholder="Meal Details">
+  <button onclick="saveDiet()">Save</button>
+  <ul id="dietList"></ul>
+</section>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
