@@ -7,10 +7,10 @@
 }
 
 body {
-    background: #020617;
-    color: #e5e7eb;
+    background: #282829;
+    color: #e4e4ed; /*text color*/
     line-height: 1.6;
-}
+} 
 
 /* ================= AUTH PAGES (LOGIN / SIGNUP) ================= */
 .auth-body {
@@ -21,7 +21,7 @@ body {
 }
 
 .auth-box {
-    background: url("program-muscle.jpg") center/cover no-repeat;
+    background: #060608;
     padding: 30px;
     border-radius: 12px;
     width: 300px;
@@ -60,7 +60,7 @@ body {
 
 /* ================= DASHBOARD ================= */
 .dash-header {
-    background: #020617;
+    background: #d4d5d7;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -106,7 +106,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(2, 6, 23, 0.95);
+    background: rgba(2, 3, 6, 0.95); /*head color*/
     backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
@@ -133,8 +133,8 @@ body {
 }
 
 .nav-links a {
-    color: #e5e7eb;
-    text-decoration: none;
+    color: #d0d3da; /*nav text color*/
+    text-decoration: burlywood;
     font-size: 15px;
     transition: color 0.3s;
 }
@@ -168,9 +168,10 @@ body {
 
 /* ================= HERO SECTION ================= */
 .hero {
-    min-height: 100vh;
-    padding: 120px 10% 60px;
-    background: url("background.jpg") center/cover no-repeat;
+    
+    min-height: 90vh;
+     background: url(../images/background.jpg) no-repeat center center/cover;
+    padding: 140px 10% 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,7 +188,7 @@ body {
     font-size: 18px;
     max-width: 600px;
     margin: 0 auto 28px;
-    color: #cbd5f5;
+    color: #080e22;
     animation: fadeUp 1.3s ease;
 }
 
@@ -199,9 +200,10 @@ body {
 }
 
 /* Main buttons */
-.btn {
-    background: #38bdf8;
-    color: #020617;
+.btn.inline {
+    background: #dee1ed;
+    border: 2px solid #38bdf8;
+    color: #01131b;
     padding: 12px 28px;
     border-radius: 30px;
     font-weight: bold;
@@ -210,9 +212,14 @@ body {
 }
 
 .btn.outline {
-    background: transparent;
-    border: 2px solid #38bdf8;
-    color: #38bdf8;
+    background: #f8f9fc;
+    border: 2px solid #77a2b8;
+    color: #021016;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
@@ -246,10 +253,10 @@ body {
 }
 
 .card {
-    background: #030613;
+    background: #18181b;                /*card bg*/
     padding: 30px;
     border-radius: 16px;
-    border: 1px solid #20232c;
+    border: 1px solid #e8e9e9;
     transition: transform 0.4s, box-shadow 0.4s;
 }
 
@@ -257,6 +264,32 @@ body {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(56, 189, 248, 0.25);
 }
+/* ================= HERO SECTION2 ================= */
+.join_us {
+    
+    min-height: 90vh;
+     background: url(../images/program-muscle.jpg) no-repeat center center/cover;
+    padding: flexible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 16px;
+    animation: fadeUp 1s ease;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 28px;
+    color: #cbd5f5;
+    animation: fadeUp 1.3s ease;
+}
+
 
 /* ================= CTA ================= */
 .cta {
@@ -268,11 +301,11 @@ body {
 
 /* ================= FOOTER ================= */
 .footer {
-    background: #04050c;
+    background: #757474;
     padding: 20px;
     text-align: center;
     font-size: 14px;
-    color: #94a3b8;
+    color: #030304;
 }
 
 /* ================= ANIMATIONS ================= */
